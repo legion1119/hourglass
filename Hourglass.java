@@ -8,15 +8,15 @@
 import java.util.*;
 
 public class Hourglass 
-{
+{	//method to find hourglass pattern
     public static int hourglass(int [][] arr, int row, int col, int maxSum)
     {
         int sum = 0;
         for (row = 0; row < 4; row++)
-        {
+        {	//arranged to find the hourglass pattern and add the values in the locations
            sum = arr[row][col] + arr[row][col+1] + arr[row][col+2] + arr[row+1][col+1] + arr[row+2][col] + arr[row+2][col+1] + arr[row+2][col+2];
             if(row == 0 && col == 0)
-            {
+            {	
                 maxSum = sum;
             }
             else if(sum > maxSum)
@@ -31,7 +31,7 @@ public class Hourglass
             return hourglass(arr, row, col, maxSum);
         }
         else
-        {
+        {	//returns max sum once all rows and columns have been iterated through
         	 return maxSum;
         }
     }
@@ -44,7 +44,7 @@ public class Hourglass
         int arr[][] = new int[6][6];
         System.out.println("Enter the numbers that you would like to be input into"
         		+ "/nthis array:");
-        for(row = 0; row < 6; row++)
+        for(row = 0; row < 6; row++)//loop to accept input for array
         {
             for(col = 0; col < 6; col++)
             {
