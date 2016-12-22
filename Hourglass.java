@@ -42,6 +42,8 @@ public class Hourglass
         int row;
         int col;
         int arr[][] = new int[6][6];
+        System.out.println("Enter the numbers that you would like to be input into"
+        		+ "/nthis array:");
         for(row = 0; row < 6; row++)
         {
             for(col = 0; col < 6; col++)
