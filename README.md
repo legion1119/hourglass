@@ -1,5 +1,5 @@
 # hourglass
-This program looks for hourglass shaped patters in a 6x6 array of integers 
+This program looks for hourglass shaped patterns in a 6x6 array of integers 
 xxx
  x
 xxx
